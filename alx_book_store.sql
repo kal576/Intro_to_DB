@@ -23,7 +23,7 @@ CREATE TABLE Customers(
 	address TEXT
 );
 
-CREATE TABLE Order_Details(
+CREATE TABLE Orders(
         order_id INT PRIMARY KEY,
         customer_id INT,
 	FORIGEIGN KEY (customer_id) REFERENCES customer(customer_id),
