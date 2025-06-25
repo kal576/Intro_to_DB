@@ -16,14 +16,14 @@ CREATE TABLE authors(
 	author_name VARCHAR(215)
 );
 
-CREATE TABLE customers(
+CREATE TABLE Customers(
 	customer_id INT PRIMARY KEY,
 	customer_name VARCHAR(215),
 	email VARCHAR(215),
 	address TEXT
 );
 
-CREATE TABLE order_details(
+CREATE TABLE Order_Details(
         order_id INT PRIMARY KEY,
         customer_id INT,
 	FORIGEIGN KEY (customer_id) REFERENCES customer(customer_id),
