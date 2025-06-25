@@ -15,7 +15,7 @@ cursor = mydb.cursor()
 try:
     #create the database if none exist
     cursor.execute("""
-               CREATE DATABASE IF NONE EXIST alx_book_store
+               CREATE DATABASE IF NOt EXISTS alx_book_store
                """)
     print("Database 'alx_book_store' created successfully!")
 
