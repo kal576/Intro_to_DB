@@ -1,4 +1,6 @@
-#Database for an online bookstore. It contains books, authors, customers, orders and order details.
+#Database for an online bookstore. It contains books, authors, customers, orders and order details
+
+CREATE DATABASE IF NOT EXISTS alx_book_store
 
 CREATE TABLE Books(
 	book_id INT PRIMARY KEY,
